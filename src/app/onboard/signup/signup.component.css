@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+mat-toolbar{
+  width: 100;
+  background: #941153;
+}
+#logo-img-id{
+  height: 3rem;
+  width: 3rem;
+  margin-top: -2rem;
+
+}
+#logo-img-id{
+  margin-left: 10px;
+}
+.icon {
+  height: 10px;
+  width: 10px;
+}
+
+.app-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+
+@media screen and (max-width: 320px) {
+
+  #logo-img-id{
+    margin-top: -2.5rem;
+  }
+
+}
+.proflo-signup{
+  justify-content: center;
+}
+
+
+.proflo-signup{
+    display: flex;
+}
+
+/* .mat-card{
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .mat-card-content{
+    margin-left:200px;
+    align-content: center;
+    width: 250px;
+
+} */
+
+/* .signup-form{
+    flex: 1;
+    align-items: center;
+    padding-left: 20px;
+} */
+
+.signup-img{
+    flex: 1;
+}
+
+#signup-form-id{
+  /* overflow: auto; */
+  max-height:550px;
+  max-width: 400px;
+  margin: 20px 20px;
+
+}
+mat-card{
+
+  background: #e39393;
+}
+h3{
+  margin-left: 120px;
+}
+mat-form-field{
+    width: 270px;
+  }
+.footer {
+  /* position: fixed; */
+
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #941153;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+.title-center {
+  margin: 0 auto;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  padding: 4px;
+  font-family: 'Satisfy', cursive;  
+}
+
+
+
+footer{
+
+  background-color :#941153;
+  color: aliceblue;
+  
+}
+
+.footer {
+
+  /* //position: fixed; */
+  width: 100%;
+  clear: both;
+  background-color:#941153;
+  height: 100px;
+  margin-top: -100px;
+
+}
+
+.copy {
+
+  float: left;
+  color: white;
+  text-align: right;
+}
+
+/*
+// mat-toolbar-row.mat-toolbar-row {
+//     background-color: blue;
+// } */
+
+.secondnav
+{   color: white;
+ background-color:#5c94bd;
+ height: 2px;
+ bottom: 0;
+/* // position: fixed; */
+}
+.two{
+  background-color: #5c94bd;
+}
+
+.youtube {
+  margin-top: 30px;
+}
+
+.space {
+  margin-bottom: 30px !important;
+}

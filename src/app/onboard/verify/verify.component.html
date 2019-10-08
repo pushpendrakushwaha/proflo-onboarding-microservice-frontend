@@ -1,0 +1,105 @@
+<mat-toolbar >
+  <mat-toolbar-row class="one">
+    <div class="icon">
+     <img href="#" mat-card-image id="logo-img-id" src="../../../assets/Images/teamwork.png" alt="Photo of a proflo">
+    </div>
+    <!-- <span id="title-id"><h3>ProFlo</h3></span> -->
+    <span class="title-center">Proflo</span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="align-center"></span>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="proflo-verify">
+<mat-card class="verify-form">
+  <mat-card-content>
+  <mat-card-header >
+          <mat-card-title id="title-id">Register your E-mail</mat-card-title>
+  </mat-card-header>
+
+  <form [formGroup]="verifyForm" (ngSubmit)="verify()">
+  <div class="verify-container">
+
+
+  <mat-form-field class="form-group" class="full-width">
+  <mat-label>Email</mat-label>
+  <input  matInput  class="form-control" formControlName="Email" required >
+  <!-- <mat-error *ngIf="LastName.errors?.required">please enter firstname</mat-error>
+  <mat-error *ngIf="Email.errors?.email">please valid email only</mat-error> -->
+  </mat-form-field>
+  <br>
+    <button class="form-group" mat-raised-button color="primary" (click)="openDialog()">Click Here!</button>
+  </div>
+  </form>
+  </mat-card-content>
+</mat-card>
+
+
+<mat-card class="verify-img">
+<img mat-card-image src="..\assets\Images\692.jpg" alt="Photo of a meeting">
+
+</mat-card>
+</div>
+
+<!-- <div class="footer" #footer>
+&copy; Copyright 2019 ProFlo
+</div> -->
+
+
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+<!-- Footer Elements -->
+<div class="container">
+
+<!--Grid row-->
+<div class="row d-flex justify-content-center">
+
+  <!--Grid column-->
+  <div class="col-md-6">
+
+
+      <iframe class="youtube" src="https://youtube.com/embed/BOU1YP5NZVA"
+  width="410" height="215" frameborder="0" allowfullscreen>
+</iframe>
+
+
+  </div>
+
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 textSize">
+
+          <!-- Links -->
+          <h4 >Contact</h4>
+         <!-- <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
+            <h6 class="space">
+            <i class=" space text-uppercase fas fa-home mr-3"></i> Koramangala, Bangalore</h6>
+           <h6 class="space">
+            <i class=" space text-uppercase fas fa-envelope mr-3"></i> proflo@gmail.com</h6>
+           <h6 class="space">
+            <i class=" space text-uppercase fas fa-phone mr-3"></i> + 91 1234567890</h6>
+           <h6 class="space">
+            <i class=" space text-uppercase fas fa-print mr-3"></i> + 01 234 567 89</h6>
+
+  </div>
+  <!--Grid column-->
+
+
+
+</div>
+<!--Grid row-->
+
+</div>
+<!-- Footer Elements -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2019 Copyright:
+ProFlo
+</div>
+<!-- Copyright -->
+
+</footer>
+
+
+
+
+

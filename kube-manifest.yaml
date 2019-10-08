@@ -1,0 +1,67 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      app: onboarding-portal-frontend
+      kompose.cmd: kompose convert -f docker-compose.yml -o kube-manifest.yaml
+      kompose.version: 1.18.0 (06a2e56)
+    creationTimestamp: null
+    labels:
+      io.kompose.service: onboarding-portal-frontend
+    name: onboarding-portal-frontend
+  spec:
+    ports:
+    - name: "4200"
+      port: 4200
+      targetPort: 80
+    selector:
+      io.kompose.service: onboarding-portal-frontend
+  status:
+    loadBalancer: {}
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    annotations:
+      app: onboarding-portal-frontend
+      kompose.cmd: kompose convert -f docker-compose.yml -o kube-manifest.yaml
+      kompose.version: 1.18.0 (06a2e56)
+    creationTimestamp: null
+    labels:
+      io.kompose.service: onboarding-portal-frontend
+    name: onboarding-portal-frontend
+  spec:
+    replicas: 1
+    strategy: {}
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          io.kompose.service: onboarding-portal-frontend
+      spec:
+        containers:
+        - image: proflo/onboarding-portal-frontend:<VERSION>
+          name: onboarding-portal-frontend
+          ports:
+          - containerPort: 80
+          resources: {}
+        restartPolicy: Always
+  status: {}
+- apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    name: onboarding-portal-frontend-ingress
+    annotations:
+      nginx.ingress.kubernetes.io/rewrite-target: /
+  spec:
+    rules:
+    - host: onboarding.proflo.cgi-wave7.stackroute.io
+      http:
+        paths:
+        - path: /
+          backend:
+            serviceName: onboarding-portal-frontend
+            servicePort: 80
+kind: List
+metadata: {}

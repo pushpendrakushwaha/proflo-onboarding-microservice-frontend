@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+#carousel-container-id {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 680px;
+  margin-top: 40px;
+  height: 430px;
+  margin: 40px 10px;
+}
+.login-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  max-height: 380px;
+  margin-top: 10rem;
+}
+mat-toolbar {
+  width: 100;
+}
+.proflo-login-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.login-form {
+  flex: 1;
+  align-items: center;
+  height: 100%;
+}
+
+.mat-card-content {
+  margin-left: 200px;
+}
+@media screen and (max-width: 320px) {
+  #img-id {
+    width: 300px;
+    height: 330px;
+  }
+  #logo-img-id {
+    margin-top: -2.5rem;
+  }
+  #carousel-container-id {
+    /* display: flex;
+      flex-wrap: wrap; */
+    margin: 10px;
+    /* height: auto; */
+  }
+  .login-form-container {
+    margin: 0px 10px 0px 60px;
+  }
+}
+.proflo-login-flex-hero-unit {
+  flex: 2;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#logo-img-id {
+  height: 3rem;
+  width: 3rem;
+  margin-top: -2rem;
+}
+
+.login-form-group {
+  width: 100%;
+}
+
+.login-form-container {
+  width: 100%;
+  font-size: 1.3em;
+  padding: 20px;
+}
+#logo-img-id {
+  margin-left: 10px;
+}
+.login-form-action-btns {
+  display: flex;
+}
+
+.icon {
+  height: 10px;
+  width: 50px !important;
+}
+
+.app-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+
+.title-center {
+  margin: 0 auto;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  padding: 4px;
+  font-family: 'Satisfy', cursive;  
+}
+
+
+.footer {
+  /* position: fixed; */
+
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+ background-color: #941153;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+
+footer{
+  background-color :#941153;
+  color: aliceblue;
+  }
+
+.footer {
+
+  /* //position: fixed; */
+  width: 100%;
+  clear: both;
+  background-color: #941153;
+  height: 100px;
+  margin-top: -100px;
+
+}
+
+.copy {
+  float: left;
+  color: white;
+  text-align: right;
+}
+
+/*
+// mat-toolbar-row.mat-toolbar-row {
+//     background-color: blue;
+// } */
+
+.secondnav {
+  color: white;
+  background-color: black;
+  height: 2px;
+  bottom: 0;
+  /* // position: fixed; */
+}
+
+.text-uppercase {
+  font-size: 3rem;
+}
+.one{
+  background-color: #941153
+}
+
+.youtube {
+  margin-top: 30px;
+}

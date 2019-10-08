@@ -1,0 +1,9 @@
+version: "3"
+services:
+  onboarding-portal-frontend:
+    image: proflo/onboarding-portal-frontend
+    build: .
+    labels:
+      app: onboarding-portal-frontend
+    ports:
+      - "4200:80"
